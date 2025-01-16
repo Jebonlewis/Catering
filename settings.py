@@ -23,8 +23,7 @@ EMAIL_PORT = EMAIL_PORT
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-g@+*htb(8j%0syxuw8*07cw&y%y)^rbcxuo+)e^2=wpqcfw8t7'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -87,10 +86,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'catering',
-        'USER':'postgres',
-        'PASSWORD':'1234',
+        'USER':'',
+        'PASSWORD':'',
         'HOST':'localhost',
-        'PORT':'5432'
+        'PORT':''
     }
 }
  
@@ -156,6 +155,3 @@ COMPRESS_ENABLED = True
 
 STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
 
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51N3XiPSI2xMBLnHXviJHtCL36yqsGKdZoxG17Qu0WlwonA5b7dx4OKXdAEnCSGVUkFwM4kxB9RkbpzEjjh9W3kKw00yyPCWDXF'
-STRIPE_SECRET_KEY='sk_test_51N3XiPSI2xMBLnHXG8dZJZ3k1zi7zWxwdEpSOlaAoeXLYKEFBH5hLCxEE5qKnAX0oss0jaC4YYKVVStolkBJpmOi001hYEdKk2'
-MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
